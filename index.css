@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Bitter", serif;
-  text-decoration: none;
-  color: #efe9e9;
-}
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Bitter&display=swap");
 
 body {
   background-image: url(gato2.jpg);
@@ -14,113 +8,78 @@ body {
   background-size: cover;
 }
 
-/*Header,Nav Bar, Container, H1 */
-header {
-  width: 100%;
-  height: 10vh;
-}
+/*Header,logo, menu, btns */
 
-.container {
+.header {
   display: flex;
   flex-direction: row;
   background-color: rgb(10, 10, 10);
   font-size: 15px;
-  margin: 1px;
   padding: 5px;
   color: #efe9e9;
+  margin-bottom: 15rem;
 }
 
-h1 {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  padding-left: 20px;
-  letter-spacing: 1.5px;
+.logo {
+  padding: 0.25rem;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
-nav {
+.menu a {
   display: flex;
-  flex: 1;
-  flex-direction: row;
-  cursor: pointer;
-  color: #efe9e9;
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: end;
   align-items: center;
-}
-
-nav .a {
-  display: flex;
   flex: 1;
-  flex-direction: row;
-}
-
-nav .b {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-}
-
-nav .c {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-}
-
-nav.d {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-}
-/*Main, Buttons, Text*/
-main {
-  width: 100%;
-  height: 89vh;
+  gap: 10rem;
 }
 
 .btns {
   display: flex;
   flex-direction: column;
-  flex: 1;
   align-items: center;
-  justify-content: flex-start;
+  row-gap: 1.5rem;
 }
 
-p {
+.btn {
   display: flex;
-  flex-direction: column;
-  font-size: 25px;
-}
-
-button {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
   border: 3px solid #efe9e9;
   border-radius: 20px;
-  margin: 10px;
-  font-size: 15px;
-  color: #000;
-  text-transform: uppercase;
-  cursor: pointer;
-  background: transparent;
-}
-.I {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10%;
+  /* width: 300px; */
+  width: 19rem;
+  /* height: 50px; 1 rem:15.7 px */
+  height: 3rem;
 }
 
-.II {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+    background-position: center center;
+    background-clip: border-box;
+    background-size: auto;
+  }
 
-/*Responsive 
--height:min 540
--width: 1000 - 800 
--change image background-size:auto for the other sizes
-*/
+  .header {
+    font-size: 11px;
+  }
+
+  .menu {
+    gap: 2rem;
+    display: flex;
+    justify-content: end;
+  }
+}
