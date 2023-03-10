@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Header,logo, menu, btns */
@@ -63,23 +64,4 @@ body {
   width: 19rem;
   /* height: 50px; 1 rem:15.7 px */
   height: 3rem;
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    height: auto;
-    background-position: center center;
-    background-clip: border-box;
-    background-size: auto;
-  }
-
-  .header {
-    font-size: 11px;
-  }
-
-  .menu {
-    gap: 2rem;
-    display: flex;
-    justify-content: end;
-  }
 }
