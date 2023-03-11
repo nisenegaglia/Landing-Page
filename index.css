@@ -20,6 +20,7 @@ body {
   padding: 5px;
   color: #000;
   margin-bottom: 15rem;
+  outline: 3px solid #000;
 }
 
 .logo {
@@ -45,6 +46,7 @@ body {
 /*BTNS, H2*/
 
 h2 {
+  display: flex;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
