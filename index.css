@@ -7,17 +7,18 @@ body {
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
+  text-decoration: none !important;
 }
 
-/*Header,logo, menu, btns */
+/*HEADER,LOGO,MENU */
 
 .header {
   display: flex;
   flex-direction: row;
-  background-color: rgb(10, 10, 10);
+  background-color: #fff;
   font-size: 15px;
   padding: 5px;
-  color: #efe9e9;
+  color: #000;
   margin-bottom: 15rem;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .menu a {
   display: flex;
-  color: white;
+  color: #000;
   text-decoration: none;
 }
 
@@ -41,12 +42,23 @@ body {
   flex: 1;
   gap: 10rem;
 }
+/*BTNS, H2*/
 
+h2 {
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
 .btns {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
+  font-weight: bold;
 }
 
 .btn {
@@ -58,7 +70,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-size: 15px;
-  border: 3px solid #efe9e9;
+  border: 3px solid #fff;
   border-radius: 20px;
   /* width: 300px; */
   width: 19rem;
