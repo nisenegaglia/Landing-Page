@@ -7,7 +7,6 @@ body {
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
-  text-decoration: none !important;
 }
 
 /*HEADER,LOGO,MENU */
@@ -19,15 +18,15 @@ body {
   font-size: 15px;
   padding: 5px;
   color: #000;
-  margin-bottom: 15rem;
-  outline: 3px solid #000;
+  outline: 4px solid #000;
 }
 
 .logo {
   padding: 0.25rem;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 2rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .menu a {
@@ -38,22 +37,25 @@ body {
 
 .menu {
   display: flex;
+  flex: 1;
   justify-content: end;
   align-items: center;
-  flex: 1;
-  gap: 10rem;
+  gap: 5rem;
 }
-/*BTNS, H2*/
+/*MAIN, BTNS, H2*/
 
+main {
+  margin-top: 15rem;
+}
 h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
   font-weight: bolder;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
 }
 .btns {
   display: flex;
@@ -63,19 +65,37 @@ h2 {
   font-weight: bold;
 }
 
+.btns a {
+  text-decoration: none;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: transparent
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   cursor: pointer;
   text-transform: uppercase;
   color: #fff;
   font-size: 15px;
+  font-weight: bold;
   border: 3px solid #fff;
-  border-radius: 20px;
+  border-radius: 50px;
   /* width: 300px; */
   width: 19rem;
   /* height: 50px; 1 rem:15.7 px */
   height: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    gap: 1.5rem;
+  }
 }
